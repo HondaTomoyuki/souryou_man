@@ -17,6 +17,7 @@ class CreateTodoListsTable extends Migration
             $table->id();
             $table->string('list');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
