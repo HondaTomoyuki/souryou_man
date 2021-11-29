@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Todo_list extends Model
 {
     use HasFactory;
+
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+        'delete_at'
+    ];
+    
 }
